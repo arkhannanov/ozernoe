@@ -1,0 +1,6 @@
+.navbutton {
+    height: 44px;
+    text-transform: capitalize;
+    border: 1px solid gray;
+    color: black;
+}
