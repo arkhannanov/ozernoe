@@ -5,6 +5,7 @@ import logo from './../../assets/logo.svg'
 import { useState } from 'react';
 import NavButton from '../NavButton/NavButton';
 import styles from "./styles.module.css"
+import CommonButton from '../CommonButton/CommonButton';
 
 const pages = ['Информация о доме', 'ТСЖ и правление', 'Недвижимость в доме', 'О Красково', 'Контакты'];
 
@@ -17,14 +18,17 @@ const Header = () => {
 
     return (
         <div className={styles['header']}>
-            <Image
-                src={logo}
-                width={226}
-                alt="Logo Kraskovo"
-            />
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                {pages.map((page) => <NavButton key={page}>{page}</NavButton>)}
-            </Box>
+            <div className={styles['top-wrapper']}>
+                <Image
+                    src={logo}
+                    width={226}
+                    alt="Logo Kraskovo"
+                />
+                <Box>
+                    {pages.map((page, index) => <NavButton key={page} index={index}>{page}</NavButton>)}
+                </Box>
+            </div>
+            <CommonButton>Обратная связь</CommonButton>
 
         </div>
     )

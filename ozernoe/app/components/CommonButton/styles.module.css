@@ -1,0 +1,8 @@
+.common-button {
+    height: 44px;
+    text-transform: capitalize;
+    background: #00C2FF;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
