@@ -23,7 +23,7 @@ const Header = () => {
                 alt="Logo Kraskovo"
             />
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                {pages.map((page) => <NavButton>{page}</NavButton>)}
+                {pages.map((page) => <NavButton key={page}>{page}</NavButton>)}
             </Box>
 
         </div>
