@@ -29,6 +29,7 @@
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
+    "node-sass": "^9.0.0",
     "postcss": "^8",
     "sass": "^1.69.3",
     "tailwindcss": "^3",
